@@ -4,14 +4,15 @@ class ListNode:
         self.next = next
 
 def reverse_linked_list(head):
-    prev = None
+    dummy = ListNode()
+
     current = head
     while current:
         next_node = current.next
-        current.next = prev
-        prev = current
+        current.next = dummy.next
+        dummy.next = current
         current = next_node
-    return prev
+    return dummy.next
 
 def print_linked_list(head):
     current = head
