@@ -7,3 +7,6 @@ def insertion_sort(arr):
     return arr
 
 print(insertion_sort([5, 3, 1, 2, 4]))
+
+# space_complexity = O(1)
+# time_complexity = O(n^2)
