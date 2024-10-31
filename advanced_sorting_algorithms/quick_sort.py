@@ -24,3 +24,18 @@ def quick_sort(arr):
     return arr
 
 print(quick_sort([5, 3, 1, 2, 4]))
+
+"""
+Quick Sort Algorithm
+
+This implementation uses the last element as the pivot and partitions
+the array around it. Elements smaller than the pivot are moved to the left
+side and elements greater than or equal to pivot are moved to the right side.
+
+Time Complexity:
+- Average Case: O(n log n)
+- Worst Case: O(n^2) when array is already sorted
+- Best Case: O(n log n)
+
+Space Complexity: O(log n) due to recursive call stack
+"""
