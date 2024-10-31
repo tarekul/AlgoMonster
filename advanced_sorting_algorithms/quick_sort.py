@@ -33,9 +33,8 @@ the array around it. Elements smaller than the pivot are moved to the left
 side and elements greater than or equal to pivot are moved to the right side.
 
 Time Complexity:
-- Average Case: O(n log n)
-- Worst Case: O(n^2) when array is already sorted
-- Best Case: O(n log n)
+- Average Case: O(n log n) because on each recursive call divide list into two roughly equal halves then sort each half
+- Worst Case: O(n^2) when array is already sorted because if list is sorted we are recursively calling list n times and sorting each list of size n-1.
 
 Space Complexity: O(log n) due to recursive call stack
 """
