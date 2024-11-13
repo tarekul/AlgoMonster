@@ -23,7 +23,7 @@ def find_boundary(arr: List[bool]) -> int:
     left, right = 0, len(arr) - 1
 
     while left <= right:
-        mid = left + right // 2
+        mid = (left + right) // 2
 
         if arr[mid] == True:
             boundary_idx = mid
