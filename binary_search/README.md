@@ -48,9 +48,9 @@ A sorted array is monotonic because the value increases or stays the same as the
 
 ![image](https://res.craft.do/user/full/34de0a68-4b4d-ecb0-6c1b-0c3cfda2286e/doc/B14B0840-4108-4CB0-8FBF-FB4889E0EF0D/78433653-FF07-4DBE-97CD-D7099F7D1391_2/w851EclQtJu46y0aB7BIFWHhDaZbkgXG4VZbQwyJKq4z/Image.png)
 
-The precondition for binary search is to find a monotonic function `f(x)` that either returns True or False
+The precondition for binary search is to find a monotonic function `f(x)` that either returns True or False. Then the problem becomes find the First True Sorted Boolean Array that we already know how to solve using binary search.
 
-We will call the function feasible to signify the element at the current index is feasible(True) or not (False to meet the problem constraints.
+We will call the function feasible to signify the element at the current index is feasible(True) or not (False) to meet the problem constraints.
 
 In our case above the feasible function would be `arr[mid] == True`
 
