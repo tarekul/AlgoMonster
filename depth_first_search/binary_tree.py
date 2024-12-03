@@ -35,9 +35,15 @@ child2.left = sub_child2
 child2.right = sub_child3
 
 '''
-                1
-              /   \
-            2      3
-           /      / \
-          4      5   6
+                                root
+                                    1
+                                /   \
+                    child1 -> 2      3  <- child2
+                            /      / \
+             sub_child1 -> 4      5   6 <- sub_child3
+                                  ^
+                                  |
+                               sub_child2
+          
+                
 '''
