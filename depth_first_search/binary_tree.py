@@ -35,7 +35,7 @@ child2.left = sub_child2
 child2.right = sub_child3
 
 '''
-                                root
+                                  root
                                     1
                                 /   \
                     child1 -> 2      3  <- child2
