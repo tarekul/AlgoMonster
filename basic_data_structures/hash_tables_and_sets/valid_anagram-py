@@ -1,0 +1,33 @@
+def valid_anagram(s, t):
+    if len(s) != len(t):
+        return False
+    
+    w1: dict[str, int] = {}
+    w2: dict[str, int] = {}
+    
+    for c in s:
+        w1[c] = w1.get(c, 0) + 1
+    
+    for c in t:
+        w2[c] = w2.get(c, 0) + 1
+    
+    return w1 == w2
+
+if __name__ == "__main__":
+    s = input()
+    t = input()
+    res = valid_anagram(s, t)
+    print("true" if res else "false")
+    
+"""
+Valid Anagram
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+Example 1:
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+Example 2:
+Input: s = "rat", t = "car"
+Output: false
+"""

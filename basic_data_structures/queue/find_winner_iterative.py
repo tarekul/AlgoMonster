@@ -4,7 +4,7 @@ def find_winner(n: int, k: int) -> int:
     for i in range(2, n + 1):
         winner = (winner + k) % i
     
-    return winner
+    return winner + 1
     
 
 if __name__ == "__main__":
